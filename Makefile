@@ -1,13 +1,13 @@
 FTP_DIR=cv
+NAME=BrettTerespolsky_CV
 
 all: pdf html
 
-pdf: RaphaelPinson_fr.pdf RaphaelPinson_en.pdf
+pdf: $(NAME).pdf
 
-html: RaphaelPinson_fr.html RaphaelPinson_en.html
+html: $(NAME).html
 
-frenchcv: RaphaelPinson_fr.pdf
-englishcv: RaphaelPinson_en.pdf
+englishcv: $(NAME).pdf
 
 %.pdf: %.tex
 	#lualatex -interaction=batchmode $<
