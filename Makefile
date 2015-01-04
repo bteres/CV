@@ -16,7 +16,7 @@ englishcv: $(NAME).pdf
 	xelatex -interaction=batchmode $<
 
 %.html: %.pdf
-	pdf2htmlEX --zoom=1.75 $<
+	pdf2htmlEX --zoom=1.50 $<
 
 upload:
 	-ncftpput -f ~/.ncftp/cc.cfg $(FTP_DIR)/ *.pdf
